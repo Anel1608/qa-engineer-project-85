@@ -1,0 +1,152 @@
+- summary:
+    Успешная регистрация 
+  requirement:
+    Пользователь должен иметь возможность зарегестрироваться на сайте.
+  prerequisites:
+    Открыта страница регистрации https://codebattle.hexlet.io/users/new?locale=en&next=%2F
+  test-data:
+    Nickname = Name Email = user@mail.ru Password = 123456
+  steps:
+    - Вводим Nickname
+    - Вводим Email
+    - Вводим Password
+    - Нажимаем кнопку "Submit"
+  expected-result:
+    Пользователь зарегестрирован. Попадает на главную страницу.
+    
+- summary:
+     Успешная авторизация
+   requirement:
+     Пользователь должен иметь возможность авторизоваться на сайте.
+   prerequisites:
+     Открыта страница https://codebattle.hexlet.io/session/new?locale=en&next=%2F
+     Успешно зарегестрирован пользователь
+   test-data:
+     Email = user@mail.ru Password = 123456
+   steps:
+     - Вводим Email
+     - Вводим Password
+     - Нажимаем кнопку "Submit"
+   expected-result:
+     Пользователь авторизован. Попадает на главную страницу.
+     
+- summary: 
+    Успешная авторизация через GitHub
+  requirement: 
+    При верном вводе логина и пароля GitHub происходит успешная авторизация на codebattle
+  prerequisites: 
+    Открыта страница логина. Аккаунт на GitHub создан и авторизирован
+  test-data: 
+    Логин = Anel1608 Пароль = Tima07052016
+  steps:
+    - Нажимаем кнопку "Sign In with GitHub"
+    - В модальном окне подтверждаем авторизацию через аккаунт GitHub
+  expected-result: |
+    Пользователь должен попасть на главную страницу с сообщением "Successfully authenticated" и авторизоваться
+    
+- summary:
+    Возможность выбора задачи при создании игры
+  requirement:
+    Пользователь должен иметь возможность выбрать задачу при создании игры.
+  prerequisites:
+    Открыта главная страница
+  test-data:
+    Email = user@mail.ru Password = 123456
+  steps:
+    - Нажать на "Create a game"
+    - В модальном окне выбрать сложность, time-limit, Game Type, rect_area, tags = math rest
+    - Нажать "Create battle"
+  expected-result:
+    Откроется терминал с выбранной задачей
+    
+- summary:
+    Возможность выбора соперника
+  requirement:
+    Пользователь должен иметь возможность выбрать соперника.
+  prerequisites:
+    Открыта главная страница
+  test-data:
+    Email = user@mail.ru Password = 123456
+  steps:
+    - Нажать на "Create a game"
+    - В модальном окне выбрать сложность, time-limit, Game Type = With a bot, Task, tags
+    - Нажать "Create battle"
+  expected-result:
+    Откроется игра с ботом
+  
+- summary:
+    Возможность видеть код соперника
+  requirement:
+    Пользователь должен видеть код соперника в режиме онлайн.
+  prerequisites:
+    Открыта главная страница
+  test-data:
+    Email = user@mail.ru Password = 123456
+  steps:  
+    - Нажать на "Create a game"
+    - В модальном окне выбрать сложность, time-limit, Game Type, Task, tags
+    - Нажать "Create battle"  
+  expected-result:
+    Создатся игра с выбранными параметрами, справа отобразится терминал с кодом соперника
+  
+- summary:
+    Возможность выбрать язык программирования
+  requirement:
+    Пользователь должен иметь возможность выбрать язык программирования.
+  prerequisites:
+    Открыта главная страница
+  test-data:
+    Email = user@mail.ru Password = 123456
+  steps:
+    - Нажать на "Create a game"
+    - В модальном окне выбрать сложность, time-limit, Game Type, Task, tags
+    - Нажать "Create battle"
+    - Над терминалом открыть список и выбрать "Python"
+  expected-result: |
+    Терминал изменит язык программирования, на котором будет проверять решение
+    
+- summary:
+    Возможность проверить свое решение несколько раз
+  requirement:
+    Пользователь должен иметь возможность проверить свое решение неограниченное количество раз.
+  prerequisites:
+    Открыта главная страница
+  test-data:
+    Email = user@mail.ru Password = 123456
+  steps:
+    - Нажать на "Create a game"
+    - В модальном окне выбрать сложность, time-limit, Game Type, Task, tags
+    - Нажать "Create battle"
+    - Решеть задачу
+    - Нажать над терминалом кнопку "проверить решение"
+  expected-result:
+    Появится сообщение о проверке решения
+  
+- summary:
+    Возможность войти в личный кабинет
+  requirement:
+    Пользователь должен иметь возможность войти в личный кабинет и просмотреть информацию.
+  prerequisites:
+    Открыта главная страница
+  test-data:
+    Email = user@mail.ru Password = 123456
+  steps:
+    - Нажать на "My Profile"
+  expected-result:
+    Откроется личный кабинет
+    
+- summary:
+    Возможность пригласить соперника по ссылке
+  requirement:
+    Пользователь должен иметь возможность пригласить в игру соперника по ссылке.
+  prerequisites:
+    Открыта главная страница
+  test-data:
+    Email = user@mail.ru Password = 123456
+  steps:
+    - Нажать на "Create a game"
+    - В модальном окне выбрать сложность, time-limit, Game Type = With other users, Task, tags
+    - Нажать "Create battle"
+    - Скопировать ссылку
+  expected-result:
+    К игре подключится получатель ссылки
