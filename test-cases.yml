@@ -268,3 +268,112 @@
     - Открываем главную страницу
   expected-result:
     Отображается таблица со списком лидеров и их рейтинг
+    
+- summary:
+    Неуспешная регистрация
+  requirement:
+    При вводе ранее зарегистрированного Email регистрация не пройдет.
+  prerequisites:
+    Пользовательно успешно зарегистрирован
+    Открыта страница регистрации
+  test-data:
+   Nickname = Elena Email = user@mail.ru Password = 123456
+  steps:
+    - Вводим Nickname
+    - Вводим Email
+    - Вводим Password
+    - Нажимаем кнопку "Submit"
+  expected-result:
+    Пользователь не зарегистрирован
+  
+- summary:
+    Неуспешная регистрация
+  requirement:
+    При вводе ранее зарегистрированного Nickname регистрация не пройдет.
+  prerequisites:
+    Пользовательно успешно зарегистрирован
+    Открыта страница регистрации
+  test-data:
+   Nickname = Name Email = user@gmail.ru Password = 123456
+  steps:
+    - Вводим Nickname
+    - Вводим Email
+    - Вводим Password
+    - Нажимаем кнопку "Submit"
+  expected-result:
+    Пользователь не зарегистрирован
+    
+- summary:
+    Неуспешная регистрация
+  requirement:
+     Без ввода Nickname регистрация не пройдет.
+  prerequisites:
+    Открыта страница регистрации
+  test-data:
+   Email = user@mail.ru Password = 123456
+  steps:
+    - Вводим Email
+    - Вводим Password
+    - Нажимаем кнопку "Submit"
+  expected-result:
+    Пользователь не зарегистрирован    
+    
+- summary:
+    Неуспешная регистрация
+  requirement:
+     Без ввода Email регистрация не пройдет.
+  prerequisites:
+    Открыта страница регистрации
+  test-data:
+   Nickname = Name Password = 123456
+  steps:
+    - Вводим Nickname
+    - Вводим Password
+    - Нажимаем кнопку "Submit"
+  expected-result:
+    Пользователь не зарегистрирован     
+    
+- summary:
+    Неуспешная регистрация
+  requirement:
+     Без ввода Password регистрация не пройдет.
+  prerequisites:
+    Открыта страница регистрации
+  test-data:
+    Nickname = Name Email = user@mail.ru 
+  steps:
+    - Вводим Nickname
+    - Вводим Email
+    - Нажимаем кнопку "Submit"
+  expected-result:
+    Пользователь не зарегистрирован    
+    
+- summary:
+    Неуспешная регистрация
+  requirement:
+    Если пароли не совпадают регистрация не пройдет.
+  prerequisites:
+    Открыта страница регистрации
+  test-data:
+    Nickname = Name Email = user@mail.ru Password = 123456 Password = 1234567
+  steps:
+    - Вводим Email
+    - Вводим Password
+    - Нажимаем кнопку "Submit"
+  expected-result:
+    Пользователь не зарегистрирован    
+    
+- summary:
+    Неуспешная регистрация
+  requirement:
+    При вводе невалидного Email регистрация не пройдет
+  prerequisites:
+    Открыта страница регистрация
+  test-data:
+    Nickname = Name Email = usermail.ru Password = 123456
+  steps:
+    - Вводим Nickname
+    - Вводим Email
+    - Вводим Password
+  expected-result:
+    Пользователь не зарегистрирован
