@@ -1,0 +1,107 @@
+- summary:
+    Успешная регистрация
+  status: pass
+
+- summary:
+    Успешная авторизация
+  status: pass
+
+- summary:
+    Успешная авторизация через GitHub
+  status: pass
+
+- summary:
+    Успешная авторизация через Discord
+  status: pass
+
+- summary:
+    Возможность выбора задачи при создании игры
+  status: pass
+
+- summary:
+    Возможность выбора соперника
+  status: pass
+  
+- summary:
+    Возможность видеть код соперника
+  status: pass
+  
+- summary:
+    Возможность выбрать язык программирования
+  status: pass
+  
+- summary:
+    Возможность проверить свое решение несколько раз
+  status: pass
+  
+- summary:
+    Возможность войти в личный кабинет
+  status: pass
+  
+- summary:
+    Возможность пригласить соперника по ссылке
+  status: pass
+  
+- summary:
+    Возможность выбрать уровень сложности игры
+  status: pass
+
+- summary:
+    Возможность просмотра истории завершенных игр
+  status: pass
+
+- summary:
+    Возможность просмотра записи завершенных игр
+  status: pass
+  
+- summary:
+    Возможность отправлять сообщения в чат
+  status: pass
+  
+- summary:
+    На странице батла можно перевести задачу на выбранный язык
+  status: pass
+  
+- summary:
+    Пользователь не может изменять код соперника
+  status: pass
+  
+- summary:
+    Совместимость с браузерами
+  status: pass
+
+- summary:
+    На главной странице авторизованным пользователям выводится список лидеров, рейтинг
+  status: pass
+  
+- summary:
+    Создание турнира
+  status: pass
+  
+- summary:
+    При вводе ранее зарегистрированного Nickname регистрация не пройдет.
+  status: pass
+  
+- summary:
+    Без ввода Nickname регистрация не пройдет
+  status: pass
+  
+- summary:
+    Без ввода Email регистрация не пройдет.
+  status: pass
+
+- summary: 
+    Без ввода Password регистрация не пройдет.
+  status: pass
+  
+- summary: 
+    Если пароли не совпадают регистрация не пройдет.
+  status: pass
+  
+- summary: 
+    При вводе невалидного Email регистрация не пройдет
+  status: pass
+  
+
+  
+    
