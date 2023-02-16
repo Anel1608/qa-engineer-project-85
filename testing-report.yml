@@ -75,9 +75,21 @@
   status: pass
   
 - summary:
-    Создание турнира
+   Успешное создание турнира
+  status: pass
+
+- summary:
+    Если не заполнить поле "Name" турнир создать нельзя
   status: pass
   
+- summary:
+    Создание турнира прошедшей датой
+  status: fail
+  
+- summary:
+    Создание турнира будущей датой
+  status: fail
+
 - summary:
     При вводе ранее зарегистрированного Nickname регистрация не пройдет.
   status: pass
