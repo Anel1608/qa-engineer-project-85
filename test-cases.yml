@@ -456,7 +456,7 @@
   prerequisites:
     Открыта страница регистрация
   test-data:
-    Nickname = Name Email = usermail.ru Password = 123456
+    Nickname = Name Email = aa@aa.aa Password = 123456
   steps:
     - Вводим Nickname
     - Вводим Email
