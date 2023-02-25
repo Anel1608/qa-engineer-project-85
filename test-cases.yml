@@ -337,7 +337,6 @@
   expected-result:
     Турнир не создан
     
- 
 - summary:
     Создание турнира прошедшей датой
   requirement:
@@ -378,11 +377,11 @@
 - summary:
     Регистрация с пустым полем "Nickname"
   requirement:
-     Без ввода Nickname регистрация не пройдет.
+    Без ввода Nickname регистрация не пройдет.
   prerequisites:
     Открыта страница регистрации
   test-data:
-   Email = user@mail.ru Password = 123456
+    Email = user@mail.ru Password = 123456
   steps:
     - Вводим Email
     - Вводим Password
@@ -393,11 +392,11 @@
 - summary:
     Регистрация с пустым полем "Email"
   requirement:
-     Без ввода Email регистрация не пройдет.
+    Без ввода Email регистрация не пройдет.
   prerequisites:
     Открыта страница регистрации
   test-data:
-   Nickname = Name Password = 123456
+    Nickname = Name Password = 123456
   steps:
     - Вводим Nickname
     - Вводим Password
@@ -408,7 +407,7 @@
 - summary:
     Регистрации с пустым полем "Password"
   requirement:
-     Без ввода Password регистрация не пройдет.
+    Без ввода Password регистрация не пройдет.
   prerequisites:
     Открыта страница регистрации
   test-data:
