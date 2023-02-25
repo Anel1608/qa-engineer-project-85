@@ -1,24 +1,24 @@
-- summary:
+- summary: |
     Регистрация
   status: pass
 
-- summary:
+- summary: |
     Авторизация
   status: pass
 
-- summary:
+- summary: |
     Авторизация через GitHub
   status: pass
 
-- summary:
+- summary: |
     Авторизация через Discord
   status: pass
 
-- summary:
+- summary: |
     Проверка выбора задачи при создании игры
   status: pass
 
-- summary:
+- summary: |
     Проверка создания игры с ботом
   status: pass
   
@@ -26,11 +26,11 @@
     Проверка отображения кода соперника
   status: pass
   
-- summary:
+- summary: |
     Проверка выбора языка программирования
   status: pass
   
-- summary:
+- summary: |
     Проверка решения задачи
   status: pass
   
@@ -38,75 +38,75 @@
     Проверка входа в личный кабинет
   status: pass
   
-- summary:
+- summary: |
     Проверка приглашения соперника по ссылке
   status: pass
   
-- summary:
+- summary: |
     Проверка выбора уровня сложности игры
   status: pass
 
-- summary:
+- summary: |
     Проверка просмотра истории завершенных игр
   status: pass
 
-- summary:
+- summary: |
     Проверка просмотра записи завершенных игр
   status: pass
   
-- summary:
+- summary: |
     Проверка отправки сообщений в чат
   status: pass
   
-- summary:
+- summary: |
     На странице батла можно перевести задачу на выбранный язык
   status: pass
   
-- summary:
+- summary: |
     Пользователь не может изменять код соперника
   status: pass
   
-- summary:
+- summary: |
     Совместимость с браузером Яндекс
   status: pass
 
-- summary:
+- summary: |
     Совместимость с браузером Google Chrome
   status: pass
   
-- summary:  
+- summary: |
     Совместимость с браузером Firefox
   status: pass
 
-- summary:
+- summary: |
     На главной странице авторизованным пользователям выводится список лидеров, рейтинг
   status: pass
   
-- summary:
+- summary: |
     Успешное создание турнира
   status: pass
 
-- summary:
+- summary: |
     Если не заполнить поле "Name" турнир создать нельзя
   status: pass
   
-- summary:
+- summary: |
     Создание турнира прошедшей датой
   status: fail
   
-- summary:
+- summary: |
     При вводе ранее зарегистрированного Nickname регистрация не пройдет
   status: pass
   
-- summary:
+- summary: |
     Регистрация с пустым полем "Nickname"
   status: pass
   
-- summary:
+- summary: |
     Регистрация с пустым полем "Email"
   status: pass
 
-- summary: 
+- summary: |
     Регистрация с пустым полем "Password"
   status: pass
   
