@@ -94,7 +94,6 @@
     Создание турнира прошедшей датой
   status: fail
   
-
 - summary:
     При вводе ранее зарегистрированного Nickname регистрация не пройдет
   status: pass
@@ -108,7 +107,7 @@
   status: pass
 
 - summary: 
-    Регистрации с пустым полем "Password"
+    Регистрация с пустым полем "Password"
   status: pass
   
 
